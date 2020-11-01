@@ -1,5 +1,12 @@
 $(document).ready(function(){
-        $('#submitWeather').click(function(){
+        $('#submitCity').click(function(){
+            return getWeather();
+        });
+        
+        
+        
+       
+    function getWeather(){
             var city=$("#city").val();
             if (city!=''){
                 $.ajax({
@@ -17,13 +24,20 @@ $(document).ready(function(){
                 });
             }
             else{
-                $("#error").html("<div> City Field can't be empty");
+                $("#error").html("<div class='alert alert-danger' id='errorCity'> City Field can't be empty</div>");
             }
 
-        });
+        }
 
-});
+
 
 function showResults(data){
-    return "<p>" Temperature:"data.main.temp" &deg;F</p>";
+    return  '<h3> Current weather for '+data.name+' </h3>'+
+            "<p> Weather:"+data.weather[0].main+" </p>"+
+            "<p> Temperature:"+data.main.temp+" &deg;F</p>"+
+            "<p> Min temperature:"+data.main.temp_min+" </p>"+
+            "<p> Max temperature:"+data.main.temp_max+" </p>"+
+            "<p> Humidity:"+data.main.humidity+" </p>"+
+            "<p>Wind speed:"+data.main.speed+ " m/s</p>";
 }
+});

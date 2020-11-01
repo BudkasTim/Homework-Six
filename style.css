@@ -1,0 +1,76 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+  }
+  
+  textarea{
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #000000;
+    border-left: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    outline-color:#06AED5 ;
+    width:75%;
+  }
+  
+  .jumbotron {
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    border-radius: 0;
+    border-bottom: 10px solid black;
+  }
+.weather{
+    color: #4aa1f3;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#nav_list>li>a{
+    color: #4aa1f3;
+    font-weight: 500;
+}
+#logo{
+    max-height: 42px;
+    margin-right: 8px;
+    display: inline-block;
+    margin-top: 0px;
+}
+#colHeadText1{
+    color: white;
+    padding-top: 30px;
+    font-size: 50px;
+}
+#colHeadText2{
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+}
+
+ul#list_item{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+#cityDiv{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+iput[type='text']{
+    height: 40px;
+    font-size: 20px;
+}
+#submitCity{
+    height: 40px;
+    font-weight: bold;
+}
+#errorCity{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
