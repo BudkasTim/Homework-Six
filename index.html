@@ -10,26 +10,27 @@
   </head>
   <body>
         <div class="jumbotron" style="margin-bottom:0px; color: white;background-color: #4aa1f3;">
-            <h2 class="text-center" style="font-size: 50px; font-weight:600;"> Current Weather</h2>
+            <h2 class="text-center" style="font-size: 50px; font-weight:600;"> Weather Dashboard</h2>
         </div>      
     <div class="container">
       <div class="row text-center ">
-        <div class="col-md-12" >
-            <h3 class="text-center text primary">Enter city</h3>
-            <span id="error" class="text-center"></span>
-        </div>
-        <div class="row form-group form-inline" id="cityDiv" >
-            <input type="text" name="city" id="city" class="form-control" placeholder="Enter city name"
-            style="margin-top: 10px;">
-            <button id="submitCity" class="btn btn-primary">Search City</button>
-        </div>
-
+               <div class="col-md-12" >
+                  <h3 class="text-left text primary toggle">Enter city</h3>
+                  <span id="error" class="text-center"></span>
+                </div> 
+                <div class="row form-group form-inline" id="cityDiv" >
+                    <input type="text" name="city" id="city" class="form-control" placeholder="Enter city name"
+                    style="margin-top: 10px;">
+                    <button id="submitCity" class="btn btn-primary">Search City</button>
+                </div>
+        
         <div id="showWeather"></div>
       </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <script src=" https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
